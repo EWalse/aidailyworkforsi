@@ -19,18 +19,17 @@
         function changeBgColor() {
           let img = document.querySelector(".profile img");
 
-    // 替換不同的圖片
     if (img.src.includes("si.jpg")) {
-        img.src = "hkw.jpg"; // 替換成你的第二張圖片
+        img.src = "hkw.jpg"; 
     } else {
-        img.src = "si.jpg"; // 換回原本的圖片
+        img.src = "si.jpg"; 
     }
 
     let body = document.body;
     
-    // 產生較亮的顏色（HSL 模式）
-    let hue = Math.floor(Math.random() * 360);  // 隨機色相 (0-360)
-    let lightness = Math.floor(Math.random() * 40) + 60; // 保持亮色系 (60-100)
+    
+    let hue = Math.floor(Math.random() * 360);  
+    let lightness = Math.floor(Math.random() * 40) + 60; 
 
     let randomColor = `hsl(${hue}, 80%, ${lightness}%)`;
     
